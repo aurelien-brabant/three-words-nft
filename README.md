@@ -50,8 +50,8 @@ You can run the react app like you would run any react app, in development or pr
 
 ## Link to the actual OpenSea collection
 
-[OpenSea](`https://opensea.io/`) is the most popular and largest NFT marketplace. Since we deployed our contract and started to have some NFT minted, the collection should be
+[OpenSea](https://opensea.io/) is the most popular and largest NFT marketplace. Since we deployed our contract and started to have some NFT minted, the collection should be
 viewable on the opensea testnet (testnet, because we deployed our contract on the rinkeby testnet - no real money was involved).
 
-The link to the OpenSea collection can't be guessed from the informations the frontend receives, so it is required to hardcode it as I did in the `./frontend/src/App.js` file.
+The link to the OpenSea collection can't be guessed from the informations the frontend receives, so it is required to hardcode it as I did in [this](https://github.com/aurelien-brabant/three-words-nft/blob/master/frontend/src/utils/openSeaCollection.js) file.
 However, a more consistent solution would be to use the OpenSea API for that.
