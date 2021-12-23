@@ -18,11 +18,11 @@ I deployed the project [on Heroku](https://three-words-nft.herokuapp.com)! You s
 
 ## Setup
 
-If you want to deploy this contract, you need to provide two environment variables that are going to be used by the hardhat config (`./hardhat.config.js`).
+If you want to deploy this contract, you need to provide a few environment variables that are going to be used by the hardhat config (`./hardhat.config.js`).
 
-- `ALCHEMY_API_KEY`: An [Alchemy API key] which you can get by creating an account on their website and creating a project
+- `ALCHEMY_API_KEY`: An [Alchemy API key](https://www.alchemy.com) which you can get by creating an account on their website and creating a project
 - `ETH_PRIVATE_KEY`: The private key attached to your ethereum account, which of course **must stay private at any cost**.
-- `ETHERSCAN_API_KEY`: Your etherscan API key will be required by the config if you want to verify your solidity contract.
+- `ETHERSCAN_API_KEY`: Your [Etherscan](https://etherscan.io/) API key will be required by the config if you want to verify your solidity contract.
 
 For that you can either `export` these variables into your current shell environment or use a `.env` file in conjunction with a package like [dotenv](https://www.npmjs.com/package/dotenv)
 ## Deploy contract locally
@@ -50,7 +50,7 @@ You can run the react app like you would run any react app, in development or pr
 
 ## Link to the actual OpenSea collection
 
-[OpenSea] is `https://opensea.io/` the most popular and largest NFT marketplace. Since we deployed our contract and started to have some NFT minted, the collection should be
+[OpenSea](`https://opensea.io/`) is the most popular and largest NFT marketplace. Since we deployed our contract and started to have some NFT minted, the collection should be
 viewable on the opensea testnet (testnet, because we deployed our contract on the rinkeby testnet - no real money was involved).
 
 The link to the OpenSea collection can't be guessed from the informations the frontend receives, so it is required to hardcode it as I did in the `./frontend/src/App.js` file.
