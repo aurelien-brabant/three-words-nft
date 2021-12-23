@@ -1,0 +1,63 @@
+body,
+html {
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  font-family: -apple-system, Inter, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@keyframes fadein {
+    from { top: 0; opacity: 0; }
+    to   { top: 15px; opacity: 1; }
+}
+
+.alert-box {
+  animation: fadein .4s;
+  top: 15px;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.alert-box > .alert {
+  position: relative;
+  color: #fff;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  text-align: center;
+  padding: 6px 16px;
+  min-width: 500px;
+  margin: 0 auto;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+.alert-box > .alert > .closeBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  padding: 0 .75em;
+  margin-left: 5px;
+  font-size: 1.1rem;
+  background-color: inherit;
+  border: none;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+}
+
+.alert-box > .alert > .closeBtn::after {
+  content: 'x'
+}

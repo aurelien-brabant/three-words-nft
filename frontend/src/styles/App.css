@@ -1,0 +1,197 @@
+.App {
+  height: 100vh;
+  background-color: #0d1116;
+  text-align: center;
+  color: #fff;
+}
+
+.container {
+  height: 100%;
+  background-color: #0d1116;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header-container {
+  padding-top: 30px;
+}
+
+.header {
+  margin: 0;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.sub-text {
+  font-size: 25px;
+  color: white;
+}
+
+.gradient-text {
+  background: -webkit-linear-gradient(left, #60c657 30%, #35aee2 60%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cta-button {
+  display: block;
+  max-width: 400px;
+  min-width: 200px;
+  border: 0;
+  text-transform: uppercase;
+  padding: .5em 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 2em;
+  outline: none;
+  margin: 0 auto;
+  font-weight: bold;
+  color: white;
+}
+
+.connect-wallet-button {
+  background: -webkit-linear-gradient(left, #60c657, #35aee2);
+  background-size: 200% 200%;
+  animation: gradient-animation 4s ease infinite;
+}
+
+.mint-button {
+  background: -webkit-linear-gradient(left, #a200d6, #ff6fdf);
+  background-size: 200% 200%;
+  animation: gradient-animation 4s ease infinite;
+  margin-right: 15px;
+}
+
+.minted-nft-container > * {
+  margin: 15px 0;
+}
+
+.button {
+  display: block;
+  border: 0;
+  padding: .5em 1em;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+}
+
+.opensea-button {
+  color: #fff;
+  background-color: rgb(32, 129, 226);
+  transition: opacity .2s;
+}
+
+.transaction-button {
+  color: #000;
+  background-color: #fff;
+}
+
+.back-to-main-view-button {
+  color: orange;
+  background-color: transparent;
+  width: 100%;
+}
+
+.opensea-button:hover {
+  opacity: .8;
+}
+
+.mint-count {
+  color: white;
+  font-size: 1.4em;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.twitter-logo {
+  width: 35px;
+  height: 35px;
+}
+
+.footer-text {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.minted-nft-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5em 0;
+  padding: 1em 0;
+  color: #fff;
+  border: 1px rgba(255, 255, 255, 0.1) solid;
+}
+
+.minted-nft-container h2 {
+  margin: 0;
+}
+
+.minted-nft-container .actions > * {
+  margin: .5em 0;
+}
+
+.last-transactions h4 {
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.last-transactions a {
+  text-decoration: none;
+  color: #fff;
+  color: magenta;
+  display: block;
+  margin: .5em 0;
+}
+
+.collection-link {
+  text-decoration: none;
+  color: rgb(32, 129, 226);
+}
+
+/* KeyFrames */
+@-webkit-keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
